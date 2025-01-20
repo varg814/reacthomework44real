@@ -6,18 +6,21 @@ import Heading from "./components/molecules/Heading/Heading";
 import Image from "./components/atoms/Image/Image";
 import Button from "./components/atoms/Button/Button.jsx";
 import Prices from "./components/atoms/Prices/Prices.jsx";
+import pizzaImg from "./images/Pizza Photo.png";
+import tortelliniImg from "./images/Tortellini Photo.png";
+import cakeImg from "./images/Strawberry cake Photo.png";
 
 function App() {
   const pizzaText =
     "Premium pepperoni and cheese is made with real mozzarella on original hand-tossed crust.";
 
-  const pizzaImageSrc = "../src/images/Pizza Photo.png";
+  const pizzaImageSrc = pizzaImg;
   const tortelliniText =
     "Pasta stuffed with beef and pork topped with your choice of cream sauce with bacon, bolognese or marinara sauce.";
-  const tortelliniImageSrc = "../src/images/Tortellini Photo.png";
+  const tortelliniImageSrc = tortelliniImg;
   const cakeText =
     "Three layer strawberry dessert is not only beautiful looking, but also delicious! Perfect dessert for spring and summer.";
-  const cakeImageSrc = "../src/images/Strawberry cake Photo.png";
+  const cakeImageSrc = cakeImg;
 
   const redSvg = (
     <svg

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=DM+Serif+Display:ital@0;1&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+}
+
+.iconDiv {
+  display: flex;
+  gap: 9px;
+}
+
+.i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  border-radius: 50%;
+  background-color: white;
+  height: 32px;
+  width: 32px;
+}
+
+.red,
+.green,
+.yellow {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #f8593b;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.yellow {
+  background-color: #ffc22b;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  width: 360px;
+  border-radius: 16px;
+  background-color: #fff;
+  position: relative;
+}
+
+.paddingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding: 0 24px 30px 24px;
+}
+
+.descriptionHeadingSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.headingSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingStyle {
+  color: var(--Heading-text, #081f32);
+
+  /* DM Serif Display / 24 sp • H4 */
+  font-family: "DM Serif Display";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 104.167% */
+  letter-spacing: 0.24px;
+}
+
+.descriptionSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.descriptionStyle {
+  color: var(--Additional-text, #6e798c);
+
+  /* Open Sans / 16 sp • Body 2 */
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 156.25% */
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  color: var(--Cards-4-info-text, #a5adbb);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 156.25% */
+}
+
+.pricingContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices_container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.heading1Style {
+  color: var(--Heading-text, #081f32);
+  font-family: "DM Serif Display";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 89.286% */
+}
+
+.heading2Style {
+  color: var(--Cards-3-main-button, #f8593b);
+  font-family: "DM Serif Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+  text-decoration: line-through;
+}
+
+.buttonStyle {
+  border-radius: 4px;
+  background: var(--Cards-4-action-color, #2ecc71);
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 178.571% */
+  letter-spacing: 2.52px;
+  width: 114px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
+}
